@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator</title>
+</head>
+
+<body>
+    <form>
+        <b>Angka Pertama</b>
+        <input type="number" id="input1" /><br />
+        <b>Angka Kedua</b>
+        <input type="number" id="input2"><br />
+        <button type="submit" onclick="tambah()">Tambah</button>
+        <button type="submit" onclick="kurang()">Kurang</button>
+        <button type="submit" onclick="bagi()">bagi</button>
+    </form>
+    <script>
+        let input1 = document.querySelector("#input1")
+        let input2 = document.querySelector("#input2")
+        function tambah() {
+            let hasil = parseInt(input1.value) + parseInt(input2.value)
+            alert(`hasil pertambahan adalah ${hasil}`)
+        }
+        function kurang() {
+            let hasil = parseInt(input1.value) - parseInt(input2.value)
+            alert(`hasil Pengurangan adalah ${hasil}`)
+        }
+        function bagi() {
+            let hasil = parseInt(input1.value) / parseInt(input2.value)
+            alert(`hasil Pembagian adalah ${hasil}`)
+        }
+    </script>
+</body>
+
+</html>
